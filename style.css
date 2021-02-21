@@ -31,13 +31,18 @@ p {
 
 #input {
   border: 1px solid grey;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 
-#list-block {
+#submit-btn {
   display: inline-block;
+}
+
+#list-block {
+  display: block;
+  margin: 0 auto;
   height: 20vh;
   width: 25vh;
-  background: grey;
+  background: rgb(192, 191, 191);
 }
