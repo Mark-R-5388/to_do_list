@@ -43,6 +43,11 @@ p {
   display: block;
   margin: 0 auto;
   height: 20vh;
-  width: 25vh;
+  width: 50vh;
   background: rgb(192, 191, 191);
+}
+
+.complete {
+  text-decoration: line-through;
+  color: red;
 }

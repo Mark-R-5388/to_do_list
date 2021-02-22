@@ -1,14 +1,17 @@
+//Selectors
 const input = document.getElementById('input');
-const subBtn = document.getElementById('submit-btn');
-const listBlock = document.getElementById('list-block');
-const listArea = document.getElementById('list-area');
+const submitButton = document.getElementById('submit-btn');
+const list = document.getElementById('list');
 
-subBtn.addEventListener('click', function (event) {
-  if (event.target === subBtn) {
-    let list = document.createElement('li');
-    let listItem = document.createTextNode(input.value);
-    list.appendChild(listItem);
-    listArea.appendChild(list);
-    input.value = '';
+// Add to List
+submitButton.addEventListener('click', function (e) {
+  if (e.target === submitButton) {
+    let item = document.createElement('li');
+    let deleteButton = document.createElement('button');
+    item.appendChild(document.createTextNode(input.value));
+    list.appendChild(item);
+    list.appendChild(deleteButton);
+    deleteButton.innerHTML = 'Delete';
+    return (input.value = '');
   }
 });
